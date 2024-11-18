@@ -11,6 +11,7 @@ use App\Http\Controllers\Web\Back\Admin\ProductController;
 use App\Http\Controllers\Web\Back\Admin\SettingController;
 use App\Http\Controllers\Web\Back\Admin\ShopController;
 use App\Http\Controllers\Web\Back\Admin\UserController;
+use App\Http\Controllers\Web\Back\Admin\CartController as AdminCartController;
 use App\Http\Controllers\Web\Back\Shop\ShopController as backShopController;
 use App\Http\Controllers\Web\Back\Shop\ProductController as backProductController;
 use App\Http\Controllers\Web\Front\CartController;
@@ -58,6 +59,8 @@ Route::middleware(['auth'])->prefix("/back")->group(function () {
             Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
             Route::get('/file-manager', [FileManagerController::class, 'index'])->name('file-manager');
+
+            Route::get('/cart', [AdminCartController::class, 'index'])->name('cart');
 
             Route::prefix('/kota')->name('kota.')->group(function () {
                 Route::get('/', [CityController::class, 'index'])->name('index');

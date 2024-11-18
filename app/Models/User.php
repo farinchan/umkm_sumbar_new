@@ -6,6 +6,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Facades\Storage;
 use Spatie\Permission\Traits\HasRoles;
 
 class User extends Authenticatable
@@ -49,7 +50,7 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
-    
+
     public function CityAdmin()
     {
         return $this->hasMany(CityAdmin::class);
@@ -64,4 +65,15 @@ class User extends Authenticatable
     {
         return $this->hasMany(ProductReview::class);
     }
+
+    public function userCart()
+    {
+        return $this->hasMany(UserCart::class);
+    }
+
+    public function getPhoto(){
+        return $this->gambar ? Storage::url($this->photo) : ' https://ui-avatars.com/api/?background=000C32&color=fff&name='.$this->name;
+    }
+
+
 }

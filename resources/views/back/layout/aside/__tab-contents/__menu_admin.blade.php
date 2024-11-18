@@ -279,16 +279,13 @@
             </div>
         </div>
         <div class="menu-item">
-            <a class="menu-link "
-                href="{{ route('admin.kota.index') }}" data-bs-toggle="tooltip" data-bs-trigger="hover"
-                data-bs-dismiss="click" data-bs-placement="right">
+            <a class="menu-link  @if (request()->routeIs('admin.cart')) active @endif" href="{{ route('admin.cart') }}"
+                data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right">
                 <span class="menu-icon">
-                    <i class="ki-duotone ki-bank fs-2">
-                        <span class="path1"></span>
-                        <span class="path2"></span>
+                    <i class="ki-duotone ki-handcart fs-2">
                     </i>
                 </span>
-                <span class="menu-title">Kota/Kabupaten</span>
+                <span class="menu-title">Keranjang Pengguna</span>
             </a>
         </div>
 
