@@ -59,7 +59,7 @@
                                             </ul>
                                         </div>
                                         <div class="col-lg-3">
-                                            <h3>.</h3>
+                                            <h3>&nbsp;</h3>
                                             <ul>
                                                 @foreach ($chunks[1] as $kota2)
                                                     <li><a
@@ -69,7 +69,7 @@
                                             </ul>
                                         </div>
                                         <div class="col-lg-3">
-                                            <h3>.</h3>
+                                            <h3>&nbsp;</h3>
                                             <ul>
                                                 @foreach ($chunks[2] as $kota3)
                                                     <li><a
