@@ -10,6 +10,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class ShopController extends Controller
 {
@@ -51,8 +52,14 @@ class ShopController extends Controller
             'meta_keyword' => '',
             'city_id' => 'required',
             'user_id' => 'required',
+        ], [
+            'required' => ':attribute tidak boleh kosong',
+            'email' => ':attribute harus berupa email',
+            'mimes' => ':attribute harus berupa file gambar',
+            'max' => ':attribute maksimal 2MB',
         ]);
         if ($validator->fails()) {
+            Alert::error('Gagal', $validator->errors()->all());
             return redirect()->route('shop.create')->with('error', 'Gagal menambahkan toko baru')->withInput()->withErrors($validator);
         }
 

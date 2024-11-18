@@ -3,7 +3,7 @@
     <div class=" container-xxl " id="kt_content_container">
         <form id="kt_ecommerce_add_category_form"
             class="form d-flex flex-column flex-lg-row fv-plugins-bootstrap5 fv-plugins-framework" method="POST"
-            action="{{ request()->is('back/shop/product/create') ? route('shop.product.store') : route('admin.product.store') }}" 
+            action="{{ request()->is('back/shop/product/create') ? route('shop.product.store') : route('admin.product.store') }}"
             enctype="multipart/form-data">
             @csrf
             <div class="d-flex flex-column gap-7 gap-lg-10 w-100 w-lg-300px mb-7 me-lg-10">
@@ -90,8 +90,8 @@
                         <select name="status" class="form-select mb-2" data-control="select2" data-hide-search="true"
                             data-placeholder="Select an option" id="kt_ecommerce_add_product_status_select" required>
                             <option></option>
-                            <option value="0" selected="selected">Publish</option>
-                            <option value="1">Draft</option>
+                            <option value="1" selected="selected">Publish</option>
+                            <option value="0">Draft</option>
                         </select>
                         <div class="text-muted fs-7">Atur status produk anda.</div>
                     </div>
