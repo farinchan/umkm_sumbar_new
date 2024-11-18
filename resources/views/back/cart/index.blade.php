@@ -100,7 +100,7 @@
                                                                     <a target="_blank" href="{{ route("product", $item->product?->slug) }}"
                                                                         class="text-gray-800 text-hover-primary fs-5 fw-bold"
                                                                         data-kt-ecommerce-product-filter="product_name">{{ $item->product?->name }}</a>
-                                                                    <a class="text-muted text-hover-primary fs-7 fw-bold" href="{{ route("shop-detail", $item->product?->shop?->->slug) }}">
+                                                                    <a class="text-muted text-hover-primary fs-7 fw-bold" href="{{ route("shop-detail", $item->product?->shop?->slug) }}">
 
                                                                         <div>
                                                                             Toko: {{ $item->product?->shop?->name?? "-" }}
