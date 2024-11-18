@@ -117,7 +117,7 @@
                                 <a href="{{ route('product', $recomended1->slug) }}">
                                     <img class="img-fluid lazy" src="img/products/product_placeholder_square_medium.jpg"
                                         data-src="@if ($recomended1->productImage->isNotEmpty()) {{ Storage::url('images/product/' . $recomended1->productImage[0]->image) }} @else https://ui-avatars.com/api/?background=000C32&color=fff&name={{ $recomended1->name }} @endif"
-                                        alt="" style="height: 300px; width: 100%; fit: cover;">
+                                        alt="" style="height: 300px; width: 100%; object-fit: cover">
                                 </a>
                                 {{-- <div data-countdown="2019/05/10" class="countdown"></div> --}}
                             </figure>
@@ -214,7 +214,7 @@
                                 <a href="{{ route('product', $recomended2->slug) }}">
                                     <img class="img-fluid lazy" src="img/products/product_placeholder_square_medium.jpg"
                                         data-src="@if ($recomended2->productImage->isNotEmpty()) {{ Storage::url('images/product/' . $recomended2->productImage[0]->image) }} @else https://ui-avatars.com/api/?background=000C32&color=fff&name={{ $recomended2->name }} @endif"
-                                        alt="" style="height: 300px; width: 100%; fit: cover;">
+                                        alt="" style="height: 300px; width: 100%; object-fit: cover">
                                 </a>
                                 {{-- <div data-countdown="2019/05/10" class="countdown"></div> --}}
                             </figure>
@@ -280,7 +280,7 @@
                             <a href="{{ route('product', $product->slug) }}">
                                 <img class="img-fluid lazy" src="img/products/product_placeholder_square_medium.jpg"
                                     data-src="@if ($product->productImage->isNotEmpty()) {{ Storage::url('images/product/' . $product->productImage[0]->image) }} @else https://ui-avatars.com/api/?background=000C32&color=fff&name={{ $product->name }} @endif"
-                                    alt="" style="height: 300px; width: 100%; fit: cover;">
+                                    alt="" style="height: 300px; width: 100%; object-fit: cover">
                             </a>
                             {{-- <div data-countdown="2019/05/10" class="countdown"></div> --}}
                         </figure>

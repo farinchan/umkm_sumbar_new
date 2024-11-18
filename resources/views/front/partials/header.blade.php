@@ -159,11 +159,6 @@
                                                 </ul>
                                             </li>
                                         @endforeach
-                                        <li><span><a>-</a></span></li>
-                                        <li><span><a>-</a></span></li>
-                                        <li><span><a>-</a></span></li>
-                                        <li><span><a>-</a></span></li>
-                                        <li><span><a>-</a></span></li>
                                     </ul>
                                 </div>
                             </li>
@@ -188,7 +183,7 @@
                                 <a href="{{ route("cart") }}" id="cartCount" class="cart_bt"></a>
                                 <div class="dropdown-menu">
                                     <ul id="listCart">
-                                        
+
                                     </ul>
                                     <div class="total_drop">
                                         <div class="clearfix"><strong>Total</strong><span id="totalCart">Rp. 0</span></div>
@@ -213,7 +208,13 @@
                                     <ul>
                                         @if (Auth::check())
                                             <li>
-                                                <a href="account.html"><i class="ti-user"></i>
+                                                <a href="
+                                                @role('superadmin|admin')
+                                                {{ route('admin.dashboard') }}
+                                                 @else
+                                                 #
+                                                 @endrole
+                                                "><i class="ti-user"></i>
                                                     {{ Auth::user()->name }} <br>
                                                     <small>
                                                         {{ Auth::user()->email }}
@@ -242,12 +243,12 @@
                                                 <a href="#"><i class="ti-package"></i>My Orders</a>
                                             </li>
                                             <li>
-                                                <a href="track-order.html"><i class="ti-truck"></i>Track your
+                                                <a href="#"><i class="ti-truck"></i>Track your
                                                     Order</a>
                                             </li>
                                         @endif
                                         <li>
-                                            <a href="help.html"><i class="ti-help-alt"></i>Help and Faq</a>
+                                            <a href="{{ route("help") }}"><i class="ti-help-alt"></i>Help and Faq</a>
                                         </li>
                                         @if (Auth::check())
                                             <li>

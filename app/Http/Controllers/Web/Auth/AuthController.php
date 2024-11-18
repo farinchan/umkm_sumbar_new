@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Validator;
 
 class AuthController extends Controller
 {
-    
+
     public function index()
     {
         return view('auth.index');
@@ -48,7 +48,7 @@ class AuthController extends Controller
         } else {
             return redirect()->route('login')->with('error', 'Username and password are incorrect, please try again');
         }
-        
+
     }
 
     public function registerPost(Request $request)
