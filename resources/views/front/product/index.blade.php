@@ -235,7 +235,8 @@
                     </li>
                 @else
                     <li class="page-item previous">
-                        <a href="{{ $product->previousPageUrl() }}" class="page-link bg-light"><i
+                        <a href="{{ $products->previousPageUrl()
+                            }}" class="page-link bg-light"><i
                                 class="previous"></i></a>
                     </li>
                     <li>
@@ -272,8 +273,8 @@
                 @endif
 
                 @if ($products->hasMorePages())
-                    {{-- <li><a href="{{ $product->nextPageUrl() }}" class="next" title="next page">&#10095;</a>
-                    </li> --}}
+                    <li><a href="{{ $products->nextPageUrl() }}" class="next" title="next page">&#10095;</a>
+                    </li>
                 @else
                     <li><a href="#" class="next" title="next page">&#10095;</a></li>
                 @endif
