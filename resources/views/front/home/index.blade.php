@@ -177,7 +177,7 @@
                 <div class="row justify-content-center justify-content-md-start">
                     <div class="col-lg-6 wow" data-wow-offset="150">
                         <h3>Smart-UMKM <br>Sumatera Barat</h3>
-                        <p> {{ Str::limit(strip_tags($website->about), 200) }}</p>
+                        <p> {{ Str::limit(strip_tags($website->about), 150) }}</p>
                         <div class="feat_text_block">
                             <a class="btn_1" href="{{ route("product-all") }}" role="button">Belanja Sekarang</a>
                         </div>
