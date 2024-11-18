@@ -96,7 +96,7 @@
                             <div class="col-xl-4 col-lg-5 col-md-6 col-6">
                                 <div class="numbers-row">
                                     <input type="text" value="1" id="quantity_1" class="qty2" name="quantity_1">
-                                </div>  
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -339,7 +339,7 @@
                             <a href="{{ route('product', $releated->slug) }}">
                                 <img class="owl-lazy" src="img/products/product_placeholder_square_medium.jpg"
                                     data-src="@if ($releated->productImage->isNotEmpty()) {{ Storage::url('images/product/' . $releated->productImage[0]->image) }} @else https://ui-avatars.com/api/?background=000C32&color=fff&name={{ $releated->name }} @endif"
-                                    alt="">
+                                    alt="" style="height: 300px; width: 100%; object-fit: cover">
                             </a>
                         </figure>
                         <div class="rating">

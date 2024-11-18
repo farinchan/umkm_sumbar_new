@@ -179,6 +179,6 @@ class ProductController extends Controller
         return redirect()->back()->with('success', 'Review has been updated');
     }
 
-    
+
 
 }
