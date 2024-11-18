@@ -5,7 +5,7 @@ Theme URI: http://www.ansonika.com/allaia/
 Author: Ansonika
 Author URI: http://themeforest.net/user/Ansonika/
 
-[Table of contents] 
+[Table of contents]
 
 1. SITE STRUCTURE
 - 1.0 Icons
@@ -19,10 +19,10 @@ Author URI: http://themeforest.net/user/Ansonika/
 
 2. CONTENT
 - 2.1 Home
-- 2.2 General Listing 
+- 2.2 General Listing
 
 3. COMMON
-- 3.1 Owl Carousel Custom Nav 
+- 3.1 Owl Carousel Custom Nav
 - 3.2 Misc
 - 3.3 Spacing
 - 3.4 Sing In Modal
@@ -4452,7 +4452,7 @@ body.modal-open .mm-slideout {
   position: relative;
 }
 #carousel-home .owl-carousel .owl-slide, #carousel-home-2 .owl-carousel .owl-slide {
-  height: 500px;
+  height: 700px;
   position: relative;
 }
 @media (max-width: 767px) {
