@@ -54,7 +54,12 @@ class ProductController extends Controller
             'meta_description' => '',
             'meta_keyword' => '',
 
+        ], [
+            'required' => ':attribute tidak boleh kosong',
+            'mimes' => ':attribute harus berupa file gambar',
+            'max' => ':attribute tidak boleh lebih dari :max KB',
         ]);
+
         if ($validator->fails()) {
             Alert::error('Gagal', $validator->errors()->all());
             return redirect()->route('shop.product.create')->with('error', 'Gagal menambahkan produk baru')->withInput()->withErrors($validator);
@@ -95,7 +100,7 @@ class ProductController extends Controller
         $productImage->product_id = $product->id;
 
         $image = $request->file('image');
-        $fileName = time() . '.' . $image->getClientOriginalExtension();
+        $fileName = now()->timestamp . '.' . $image->getClientOriginalExtension();
         $filePath = $image->storeAs('images/product/', $fileName, 'public');
 
         $productImage->image = $fileName;
