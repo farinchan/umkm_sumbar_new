@@ -181,7 +181,7 @@
                             <a href="{{ route('product', $product->slug) }}">
                                 <img class="img-fluid lazy" src="img/products/product_placeholder_square_medium.jpg"
                                     data-src="@if ($product->productImage->isNotEmpty()) {{ Storage::url('images/product/' . $product->productImage[0]->image) }} @else https://ui-avatars.com/api/?background=000C32&color=fff&name={{ $product->name }} @endif"
-                                    alt="">
+                                    alt="" style="height: 300px; width: 100%; object-fit: cover">
                             </a>
                             {{-- <div data-countdown="2019/05/10" class="countdown"></div> --}}
                         </figure>
