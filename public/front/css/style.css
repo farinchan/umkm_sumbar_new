@@ -4452,7 +4452,7 @@ body.modal-open .mm-slideout {
   position: relative;
 }
 #carousel-home .owl-carousel .owl-slide, #carousel-home-2 .owl-carousel .owl-slide {
-  height: 700px;
+  height: 600px;
   position: relative;
 }
 @media (max-width: 767px) {
