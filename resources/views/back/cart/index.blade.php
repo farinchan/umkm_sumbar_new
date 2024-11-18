@@ -103,8 +103,7 @@
                                                                     <a class="text-muted text-hover-primary fs-7 fw-bold" href="#">
 
                                                                         <div>
-                                                                            {{ $item->category_parent_name != null ? $item->category_parent_name . ' > ' : '' }}
-                                                                            {{ $item->category_name }}
+                                                                            Toko: {{ $item->product?->shop?->name?? "-" }}
                                                                         </div>
                                                                     </a>
                                                                     <!--end::Title-->
