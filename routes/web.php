@@ -14,7 +14,7 @@ use App\Http\Controllers\Web\Back\Admin\UserController;
 use App\Http\Controllers\Web\Back\Shop\ShopController as backShopController;
 use App\Http\Controllers\Web\Back\Shop\ProductController as backProductController;
 use App\Http\Controllers\Web\Front\CartController;
-use App\Http\Controllers\web\front\HomeController;
+use App\Http\Controllers\Web\front\HomeController;
 use App\Http\Controllers\Web\Front\ProductController as frontProductController;
 use App\Http\Controllers\Web\Front\NewsController as frontNewsController;
 use App\Http\Controllers\Web\Front\ShopController as frontShopController;
