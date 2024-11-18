@@ -278,6 +278,19 @@
                 </div>
             </div>
         </div>
+        <div class="menu-item">
+            <a class="menu-link "
+                href="{{ route('admin.kota.index') }}" data-bs-toggle="tooltip" data-bs-trigger="hover"
+                data-bs-dismiss="click" data-bs-placement="right">
+                <span class="menu-icon">
+                    <i class="ki-duotone ki-bank fs-2">
+                        <span class="path1"></span>
+                        <span class="path2"></span>
+                    </i>
+                </span>
+                <span class="menu-title">Kota/Kabupaten</span>
+            </a>
+        </div>
 
         <div class="menu-item">
             <div class="menu-content pt-8 pb-0">

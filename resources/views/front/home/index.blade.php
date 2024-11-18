@@ -171,7 +171,7 @@
 
     <!-- /container -->
 
-    <div class="featured lazy" data-bg="url(img/featured_home.jpg)">
+    <div class="featured lazy" data-bg="url({{ asset("img/rumah_gadang.jpg") }})">
         <div class="opacity-mask d-flex align-items-center" data-opacity-mask="rgba(0, 0, 0, 0.5)">
             <div class="container margin_60">
                 <div class="row justify-content-center justify-content-md-start">
